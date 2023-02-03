@@ -5,8 +5,14 @@ Date: 02/03/2023
 
 body {
   background-color: #282d35;
+  color: #ffffff;
+  font-style: oblique;
   /* background-color: #61dafb; */
   /* background-color: #087ea4; */
   /* background-color: #0074a6; */
   /* background-color: #149eca; */
+}
+
+nav a {
+  color: #61dafb;
 }
