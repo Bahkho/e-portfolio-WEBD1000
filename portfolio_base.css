@@ -2,6 +2,10 @@
 Author: Bakare Abdulwahab Akorede
 Date: 02/03/2023
 */
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   background-color: #282d35;
@@ -13,6 +17,38 @@ body {
   /* background-color: #149eca; */
 }
 
-nav a {
+#header {
+  font-size: 2rem;
+}
+
+#header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#header span {
   color: #61dafb;
+}
+
+.menu a {
+  color: #61dafb;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a:hover {
+  color: #3a5b65;
+}
+nav {
+  justify-content: space-between;
+  background-color: #149eca;
+  display: flex;
+  padding: 2rem;
 }
