@@ -1,0 +1,51 @@
+@charset "utf-8"; /*
+Author: Bakare Abdulwahab Akorede
+Date: 02/16/2023
+Description: layout design mainly for the resume
+*/
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+#contacts {
+  text-align: end;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+.item6 {
+  grid-area: aside;
+}
+.item7 {
+  grid-area: section;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header menu menu"
+    "main main right right"
+    "main main footer footer"
+    "aside aside footer footer"
+    "aside aside section section";
+  gap: 5px;
+  color: black;
+  background-color: #3a5b65;
+  padding: 4px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.grid-container > div {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
