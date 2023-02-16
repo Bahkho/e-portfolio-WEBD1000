@@ -3,6 +3,20 @@ Author: Bakare Abdulwahab Akorede
 Date: 02/16/2023
 Description: layout design mainly for the resume
 */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+.grid-container {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.grid-container ul li {
+  list-style: none;
+}
+
+.grid-container h2 {
+  border-top: 1px solid #3a5b65;
+  border-bottom: 1px solid #3a5b65;
+}
 
 .item1 {
   grid-area: header;
@@ -12,6 +26,14 @@ Description: layout design mainly for the resume
 }
 #contacts {
   text-align: end;
+}
+#contacts li{
+  margin-top: 8px;
+
+}
+
+#contacts a {
+  color: #000000;
 }
 .item3 {
   grid-area: main;
@@ -25,6 +47,9 @@ Description: layout design mainly for the resume
 .item6 {
   grid-area: aside;
 }
+.item6 p{
+  margin-top: 8px;
+}
 .item7 {
   grid-area: section;
 }
@@ -37,9 +62,9 @@ Description: layout design mainly for the resume
     "main main footer footer"
     "aside aside footer footer"
     "aside aside section section";
-  gap: 5px;
+  /* gap: 5px; */
   color: black;
-  background-color: #3a5b65;
+  /* background-color: #3a5b65; */
   padding: 4px;
   width: 80%;
   margin-left: 10%;
@@ -47,5 +72,18 @@ Description: layout design mainly for the resume
 
 .grid-container > div {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 20px 10px;
+}
+
+.Ptopic {
+  font-size: 20px;
+}
+
+.edu_location{
+  font-size: 25px;
+}
+.courses{
+  font-size: 15px;
+  font-weight: bold;
+text-decoration: underline;
 }
