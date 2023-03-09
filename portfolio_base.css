@@ -1,19 +1,35 @@
-@charset "utf-8"; /*
+@charset "utf-8";
+/*
 Author: Bakare Abdulwahab Akorede
 Date: 02/03/2023
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #282d35;
+  color: #ffffff;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
-body {
-  background-color: #282d35;
-  color: #ffffff;
-  /* background-color: #61dafb; */
-  /* background-color: #087ea4; */
-  /* background-color: #0074a6; */
-  /* background-color: #149eca; */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00baf0;
+  padding: 2rem;
+  font-style: oblique;
+  color: #fff;
+  height: 50px;
+  padding: 1em;
 }
 
 #header {
@@ -26,29 +42,82 @@ body {
 }
 
 #header span {
-  color: #61dafb;
+  color: #282d35;
+}
+
+.top-nav a:hover {
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a {
-  color: #61dafb;
+  color: #282d35;
 }
 
 .menu li {
   list-style: none;
 }
 
-.menu {
-  display: flex;
-  gap: 1rem;
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
 }
 
-nav a:hover {
-  color: #3a5b65;
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-nav {
-  font-style: oblique;
-  justify-content: space-between;
-  background-color: #149eca;
-  display: flex;
-  padding: 2rem;
+
+#menu-toggle {
+  display: none;
 }
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+ 

@@ -5,85 +5,163 @@ Description: layout design mainly for the resume
 */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
-.grid-container {
-  font-family: "Ubuntu", sans-serif;
-}
+@media only screen and (max-width: 768px) {
+  /* mobile phone   */
 
-.grid-container ul li {
-  list-style: none;
-}
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 5rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border-bottom: 1px solid #fff;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #149eca;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
 
-.grid-container h2 {
-  border-top: 1px solid #3a5b65;
-  border-bottom: 1px solid #3a5b65;
-}
+  .grid-container {
+    color: black;
+    padding: 4px;
+  }
 
-.item1 {
-  grid-area: header;
-}
-.item2 {
-  grid-area: menu;
-}
-#contacts {
-  text-align: end;
-}
-#contacts li{
-  margin-top: 8px;
+  #contacts a {
+    color: #000000;
+    text-decoration: none;
+  }
 
-}
+  .grid-container > div {
+    background-color: #ffffff;
+    padding: 20px 10px;
+  }
 
-#contacts a {
-  color: #000000;
-}
-.item3 {
-  grid-area: main;
-}
-.item4 {
-  grid-area: right;
-}
-.item5 {
-  grid-area: footer;
-}
-.item6 {
-  grid-area: aside;
-}
-.item6 p{
-  margin-top: 8px;
-}
-.item7 {
-  grid-area: section;
-}
+  .Ptopic {
+    font-size: 20px;
+  }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header menu menu"
-    "main main right right"
-    "main main footer footer"
-    "aside aside footer footer"
-    "aside aside section section";
-  /* gap: 5px; */
-  color: black;
-  /* background-color: #3a5b65; */
-  padding: 4px;
-  width: 80%;
-  margin-left: 10%;
+  .edu_location {
+    font-size: 25px;
+  }
+  .courses {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
+@media only screen and (min-width: 769px) {
+  /* Tablet   */
+  .grid-container {
+    font-family: "Ubuntu", sans-serif;
+  }
 
-.grid-container > div {
-  background-color: #ffffff;
-  padding: 20px 10px;
-}
+  .grid-container ul li {
+    list-style: none;
+  }
 
-.Ptopic {
-  font-size: 20px;
-}
+  .grid-container h2 {
+    border-top: 1px solid #3a5b65;
+    border-bottom: 1px solid #3a5b65;
+  }
 
-.edu_location{
-  font-size: 25px;
+  .item1 {
+    grid-area: header;
+  }
+  .item2 {
+    grid-area: menu;
+  }
+  #contacts {
+    text-align: end;
+  }
+  #contacts li {
+    margin-top: 8px;
+  }
+
+  #contacts a {
+    color: #000000;
+  }
+  .item3 {
+    grid-area: main;
+  }
+  .item3 div:last-child {
+    margin-top: 1rem;
+  }
+  .item4 {
+    grid-area: right;
+  }
+  .item5 {
+    grid-area: footer;
+  }
+  .item6 {
+    grid-area: aside;
+  }
+  .item6 p {
+    margin-top: 8px;
+  }
+  .item7 {
+    grid-area: section;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header menu menu"
+      "main main right right"
+      "main main footer footer"
+      "aside aside footer footer"
+      "aside aside section section";
+    /* gap: 5px; */
+    color: black;
+    /* background-color: #3a5b65; */
+    padding: 4px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .grid-container > div {
+    background-color: #ffffff;
+    padding: 20px 10px;
+  }
+
+  .Ptopic {
+    font-size: 20px;
+  }
+
+  .edu_location {
+    font-size: 25px;
+  }
+  .courses {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
-.courses{
-  font-size: 15px;
-  font-weight: bold;
-text-decoration: underline;
+@media only screen and (min-width: 1024px) {
+  /* Desktop   */
 }
