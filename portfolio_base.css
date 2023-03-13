@@ -32,6 +32,28 @@ body {
   padding: 1em;
 }
 
+.homePage {
+  text-align: center;
+  margin: 2rem 4rem;
+}
+
+.homePage div{
+  color: #282d35;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #00baf0;
+  border-radius: 1rem;
+}
+
+.homePage h1 {
+  font-weight: bold;
+  font-size: 2.75rem;
+}
+
+#techRole {
+  color: #00baf0;
+}
+
 #header {
   font-size: 2rem;
 }
@@ -119,5 +141,3 @@ body {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
- 
