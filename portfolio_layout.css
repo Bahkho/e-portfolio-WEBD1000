@@ -41,6 +41,7 @@ Description: layout design mainly for the resume
     padding: 0.5em 0;
     width: 100%;
     color: white;
+    z-index: 1;
     background-color: #149eca;
   }
   .menu > li:not(:last-child) {
