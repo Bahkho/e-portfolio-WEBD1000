@@ -64,7 +64,7 @@ Description: layout design mainly for the resume
   }
 
   .grid-container {
-    margin: 1.5rem;
+    margin: .5rem;
   }
 
   .Ptopic {
@@ -78,6 +78,11 @@ Description: layout design mainly for the resume
     font-size: 15px;
     font-weight: bold;
     text-decoration: underline;
+  }
+
+  .homePage {
+    text-align: center;
+    margin: 2rem 1rem;
   }
 }
 
@@ -215,7 +220,7 @@ button:hover {
 }
 
 .container {
-  width: 30%;
+  width: 23rem;
   height: 90%;
   margin: 3rem;
 }
@@ -240,5 +245,13 @@ button:hover {
 @media only screen and (max-width: 1060px) {
   .flexContact{
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 90%;
+    height: 80%;
+    margin: 2rem 0;
   }
 }
