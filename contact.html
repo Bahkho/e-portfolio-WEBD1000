@@ -28,46 +28,72 @@
       </ul>
     </nav>
     <h2>Contact Me...</h2>
+    <br />
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia adipisci
-      sed rem dolores suscipit libero tempora blanditiis in hic, laudantium
-      vitae tempore cupiditate praesentium iste qui culpa laborum vero fugiat.
-      Aliquam voluptatum alias ratione pariatur, tempore blanditiis consequatur.
-      Deserunt iure assumenda dolorum sit at quae veritatis. Quas quasi soluta
-      deleniti molestiae fuga eveniet vitae, commodi repellat unde distinctio,
-      fugit numquam.
+      Welcome to my contact page! Thank you for taking the time to visit and
+      learn more about my work. If you have any questions or would like to
+      discuss a project, I would love to hear from you.
     </p>
-    <hr>
-    <hr>
-    <ul class="contact">
-      <li class="contactLogo">
-        <img src="./image/envelope.svg" alt="" /><br />
-        <a href="mailto:akoredebakare4u@gmail.com" target="_blank"
-          >Mail</a
-        >
-      </li>
-      <li class="contactLogo">
-        <img src="./image/whatsapp.svg" alt="" /><br />
-        <a href="https://wa.me/+19023995639" target="_blank"
-          >Whatsapp</a
-        >
-      </li>
-      <li class="contactLogo">
-        <img src="./image/github.svg" alt="" /><br />
-        <a href="https://github.com/Bahkho" target="_blank">Github</a>
-      </li>
-      <li class="contactLogo">
-        <img src="./image/linkedin.svg" alt="" /><br />
-        <a href="https://www.linkedin.com/in/bahkho/" target="_blank"
-          >Linkedln</a
-        >
-      </li>
-      <li class="contactLogo">
-        <img src="./image/twitter.svg" alt="" /><br />
-        <a href="https://twitter.com/Bahkho______" target="_blank"
-          >Twitter</a
-        >
-      </li>
-    </ul>
+    <br />
+    <hr />
+    <hr />
+
+    <div class="flexContact">
+      <div class="container">
+        <!-- <h2>Contact Me</h2> -->
+        <form method="POST" name="contact" data-netlify="true">
+          <label for="firstname">Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="Firstname"
+            placeholder="Please Enter your name.."
+            required
+          />
+      
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Your email address.."
+            required
+          />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="Subject"
+            placeholder="Write your Message..."
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <ul class="contact">
+        <!-- <li class="contactLogo">
+          <img src="./image/envelope.svg" alt="" /><br />
+          <a href="mailto:akoredebakare4u@gmail.com" target="_blank">Mail</a>
+        </li> -->
+        <li class="contactLogo">
+          <img src="./image/whatsapp.svg" alt="" /><br />
+          <a href="https://wa.me/+19023995639" target="_blank">Whatsapp</a>
+        </li>
+        <li class="contactLogo">
+          <img src="./image/github.svg" alt="" /><br />
+          <a href="https://github.com/Bahkho" target="_blank">Github</a>
+        </li>
+        <li class="contactLogo">
+          <img src="./image/linkedin.svg" alt="" /><br />
+          <a href="https://www.linkedin.com/in/bahkho/" target="_blank"
+            >Linkedln</a
+          >
+        </li>
+        <li class="contactLogo">
+          <img src="./image/twitter.svg" alt="" /><br />
+          <a href="https://twitter.com/Bahkho______" target="_blank">Twitter</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

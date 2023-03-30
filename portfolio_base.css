@@ -12,6 +12,7 @@ body {
   height: 100%;
   background-color: #282d35;
   color: #ffffff;
+  font-family: ubuntu;
 }
 
 * {
@@ -48,6 +49,10 @@ body {
 .homePage h1 {
   font-weight: bold;
   font-size: 2.75rem;
+}
+
+.homePage > p {
+  margin-top: 2rem;
 }
 
 #techRole {
@@ -145,7 +150,8 @@ body {
 .contact{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 1rem;
   align-items: center;
   padding: 1rem;
   color: #282d35;
@@ -167,7 +173,7 @@ body {
 .contact li a {
   text-decoration: none;
   cursor: pointer;
-  color: #282d35;
+  color: #ffffff;
 }
 
 .contactLogo {
@@ -178,7 +184,13 @@ body {
   width: 50px;
   /* height: 50px; */
   padding: 2rem;
+
 }
+
+/* .contactLogo img {
+  max-width: 100%;
+  max-height: 100%;
+} */
 
 .goals,
 .skills {
@@ -199,6 +211,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+}
+
+.skillsLogo img{
   padding: 1rem;
 }
 

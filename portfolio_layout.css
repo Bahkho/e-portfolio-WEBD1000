@@ -63,6 +63,10 @@ Description: layout design mainly for the resume
     padding: 20px 10px;
   }
 
+  .grid-container {
+    margin: 1.5rem;
+  }
+
   .Ptopic {
     font-size: 20px;
   }
@@ -75,13 +79,16 @@ Description: layout design mainly for the resume
     font-weight: bold;
     text-decoration: underline;
   }
+}
 
-  .contact,.skillsLogo{
-flex-wrap: wrap;    
+@media only screen and (max-width: 965px) {
+  .skillsLogo,
+  .contact {
+    flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* Tablet   */
+  /* Desktop   */
   .grid-container {
     font-family: "Ubuntu", sans-serif;
   }
@@ -167,6 +174,71 @@ flex-wrap: wrap;
     text-decoration: underline;
   }
 }
-@media only screen and (min-width: 1024px) {
-  /* Desktop   */
+
+.flexContact {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* margin-top: 1rem; */
+}
+
+
+
+/* h2 {
+  text-align: center;
+} */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #282d35;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+textarea {
+  height: 150px;
+  resize: none;
+}
+button {
+  background-color: #282d35;
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #4b515b;
+}
+
+.container {
+  width: 30%;
+  height: 90%;
+  margin: 3rem;
+}
+.container {
+  border-radius: 2rem;
+  background-color: #00baf0;
+  padding: 20px;
+
+
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999; */
+
+}
+
+@media only screen and (max-width: 1060px) {
+  .flexContact{
+    flex-direction: column;
+  }
 }
