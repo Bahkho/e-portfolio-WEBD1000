@@ -227,7 +227,7 @@ button:hover {
 .container {
   border-radius: 2rem;
   background-color: #00baf0;
-  padding: 20px;
+  padding: 1rem;
 
 
   /* position: fixed;
@@ -250,8 +250,8 @@ button:hover {
 
 @media only screen and (max-width: 470px) {
   .container {
-    width: 90%;
+    width: 82%;
     height: 80%;
-    margin: 2rem 0;
+    margin: 2rem 1rem
   }
 }

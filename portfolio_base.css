@@ -13,6 +13,8 @@ body {
   background-color: #282d35;
   color: #ffffff;
   font-family: ubuntu;
+  overflow-x: hidden;
+
 }
 
 * {
@@ -31,6 +33,8 @@ body {
   color: #fff;
   height: 50px;
   padding: 1em;
+  position: sticky;
+  top: 0;
 }
 
 .homePage {
@@ -199,6 +203,14 @@ body {
 
 .goals ol li {
   margin-top: 1rem;
+}
+
+.skillsText{
+  padding: .5rem;
+}
+
+.certificateText{
+  padding: 1rem;
 }
 
 .skillsLogo img{
