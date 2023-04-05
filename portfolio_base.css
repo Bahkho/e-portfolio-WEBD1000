@@ -233,3 +233,8 @@ body {
 figcaption {
   text-align: center;
 }
+
+.certificateImg img{
+  margin: 1rem;
+  height: 17rem;
+}
