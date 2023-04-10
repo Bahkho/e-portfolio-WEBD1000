@@ -201,7 +201,7 @@ body {
   padding: 1.5rem;
 }
 
-.goals ol li {
+.goals ol li,.skills ol li {
   margin-top: 1rem;
 }
 
