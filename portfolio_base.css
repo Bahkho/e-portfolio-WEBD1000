@@ -6,6 +6,7 @@ Date: 02/03/2023
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
+
 html,
 body {
   margin: 0;
@@ -29,7 +30,7 @@ body {
   justify-content: space-between;
   background-color: #00baf0;
   padding: 2rem;
-  font-style: oblique;
+  font-style: normal;
   color: #fff;
   height: 50px;
   padding: 1em;
@@ -115,6 +116,7 @@ body {
   display: none;
 }
 
+/* This is a code reference from my professor Hamlet Lin */
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -150,6 +152,7 @@ body {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
+/* And it stops here  */
 
 .contact{
   display: flex;

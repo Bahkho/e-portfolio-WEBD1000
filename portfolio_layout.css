@@ -5,9 +5,10 @@ Description: layout design mainly for the resume
 */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
+
 @media only screen and (max-width: 768px) {
   /* mobile phone   */
-
+/* This is a code reference from my professor Hamlet Lin */
   .menu-button-container {
     display: flex;
   }
@@ -47,6 +48,7 @@ Description: layout design mainly for the resume
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  /* It stops here  */
 
   .grid-container {
     color: black;
@@ -228,17 +230,6 @@ button:hover {
   border-radius: 2rem;
   background-color: #00baf0;
   padding: 1rem;
-
-
-  /* position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 9999; */
 
 }
 
